@@ -23,7 +23,7 @@ Author URL: http://w3layouts.com
   <!--header-->
   <header id="site-header" class="fixed-top">
     <!-- //top header -->
-    <div class="container">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg stroke px-0 py-lg-0">
         <h1><a class="navbar-brand" href="#index.html">
           <img src="assets/images/h-logo.png" alt="Your logo" title="Your logo" style="height:50px;" /></a>
@@ -133,7 +133,7 @@ Author URL: http://w3layouts.com
   <!--/header-->
   <!--/breadcrumb-bg-->
   <div class="breadcrumb-bg py-5  w3l-inner-page-breadcrumb">
-    <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
+    <div class="container-fluid pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
       <ul class="breadcrumbs-custom-path mt-3 text-center pt-5">
         <li><a href="index.html">Home</a></li>
         <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contact </li>
@@ -145,7 +145,7 @@ Author URL: http://w3layouts.com
   <!-- contacts -->
   <section class="w3l-contact-7 py-5">
     <div class="contacts-9 py-lg-5 py-md-4">
-      <div class="container">
+      <div class="container-fluid">
           <div class="title-content text-left">
             <h6 class="title-subhny">Send a Message</h6>
             <h3 class="title-w3l">Have a Question?</h3>
@@ -160,8 +160,7 @@ Author URL: http://w3layouts.com
                   </div>
                   <div classs="w3ad-infin">
                     <h5 class="mb-2">Our Location</h5>
-                    <p>Car Servicing, 208 Trainer Avenue street, Corner
-                      Market, NY - 62617 </p>
+                    <p>Manjeri, Malapluram, Kerala, India</p>
                   </div>
                 </div>
                 
@@ -171,8 +170,7 @@ Author URL: http://w3layouts.com
                   </div>
                   <div classs="col-9 w3ad-infin">
                     <h5 class="mb-2">Mail Us</h5>
-                    <p> <a href="mailto:mail@example.com">mail@example.com</a></p>
-                    <p> <a href="mailto:mail@example.com">mail@example.com</a></p>
+                    <p> <a href="mailto:info@libhrex.com">info@libhrex.com</a></p>
                   </div>
                 </div>
                 <div class="ad-info-gd mb-4">
@@ -181,26 +179,75 @@ Author URL: http://w3layouts.com
                   </div>
                   <div classs="w3ad-infin">
                     <h5 class="mb-2">Call Us</h5>
-                    <p><a href="tel:+1(12) 366 411 4899"> +1(12) 366 411
-                      4899</a></p>
-                    <p><a href="tel:+1(12) 366 411 4999"> +1(12) 366 411
-                        4999</a></p>
+                    <p><a href="tel:+91 999 888 5656">+91 999 888 5656</a></p>
+                    <p><a href="tel:+91 999 888 5757">+91 999 888 5757</a></p>
                   </div>
                 </div>
             
               </address>
             </div>
             <div class="col-lg-7">
-              <form action="https://mailthis.to/info@libhrex.com"
-              method="POST" class="text-right">
-                <div class="form-grid mb-3">
-                  <input type="text" name="w3lName" id="w3lName" placeholder="Name*" required="">
-                  <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
+                <form action="https://mailthis.to/info@libhrex.com" method="POST" class="needs-validation" id="contact-form" novalidate>
+                  <div class="form-row">
+                    <div class="col-sm-6 mb-3">
+                      <input type="text" class="form-control" name="Name" id="name" placeholder="Name*" required>
+                      <div class="invalid-feedback">
+                        Enter Name!
+                      </div>
+                    </div>
+                      <div class="col-sm-6 mb-3">
+                        <input type="Email" class="form-control" name="Email" id="email" placeholder="Email*" required>
+                        <div class="invalid-feedback">
+                          Enter email!
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <select id="country-code" class="form-control">
+                                      <option selected>India(+91)</option>
+                                      <option >Saudi(+966)</option>
+                                      <option >Dubai(+971)</option>
+                                  </select>
+                              </div>
+                              <input type="tel" class="form-control" name="Mobile" id="mobile" placeholder="Mobile*" pattern="[5-9]{1}[0-9]{8,9}" required>
+                              <div class="invalid-feedback">
+                                  Enter a valid mobile number!
+                              </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="input-group">
+                          <div class="input-group-prepend">
+                              <select id="country-code" class="form-control">
+                                  <option selected>India(+91)</option>
+                                  <option >Saudi(+966)</option>
+                                  <option >Dubai(+971)</option>
+                              </select>
+                          </div>
+                          <input type="tel" class="form-control" name="Landline" id="mobile" placeholder="Landline" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
+                          <div class="invalid-feedback">
+                              Enter a valid landline number!
+                          </div>
+                      </div>
                 </div>
-                <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Subject">
-                <textarea name="w3lMessage" id="w3lMessage" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-sm-12">
+                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-sm-12">
+                      <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" placeholder="Your Message"></textarea>
+                      </div>
+                  </div>
                 <input type="hidden" name="_honeypot" value="">
-                <button type="submit" class="btn btn-primary btn-style mt-3">Submit Message <span class="fa fa-paper-plane ml-3" aria-hidden="true"></span></button>
+                <div class="text-center text-md-left">
+                  <button type="submit" class="btn btn-primary btn-style mt-3">Send<span class="fa fa-paper-plane ml-3" aria-hidden="true"></span></button>
+                </div>
               </form>
             </div>
 
@@ -217,7 +264,7 @@ Author URL: http://w3layouts.com
 <!-- footer -->
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
-    <div class="container py-lg-3">
+    <div class="container-fluid py-lg-3">
       <div class="row footer-top-29">
         <div class="col-lg-4 footer-list-29 footer-2 mt-lg-0 mt-md-5 mt-4 pr-lg-5">
           <div class="footer-logo mb-3">
@@ -290,7 +337,7 @@ Author URL: http://w3layouts.com
 <!-- //footer -->
 <!-- copyright -->
 <section class="w3l-copyright">
-  <div class="container">
+  <div class="container-fluid">
     <div class="bottom-copies text-center">
       <p class=" copy-footer-29">© 2022 Libhrex.Made with <span class="fa fa-heart" aria-hidden="true"></span> love. Design by<a href="https://w3layouts.com/"
           target="_blank">
@@ -326,6 +373,7 @@ Author URL: http://w3layouts.com
 </section>
 <!-- //copyright -->
 <!--//footer-->
+<script src="assets/js/form.js"></script>
 <!-- Template JavaScript -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/theme-change.js"></script>
