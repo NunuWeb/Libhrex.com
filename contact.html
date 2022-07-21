@@ -187,45 +187,69 @@ Author URL: http://w3layouts.com
               </address>
             </div>
             <div class="col-lg-7">
-              <form action="https://mailthis.to/info@libhrex.com" method="POST" class="text-right">
-                <div class="form-grid mb-3">
-                  <input type="text" name="Name" id="w3lName" placeholder="Name*" required="">
-                  <input type="email" name="Sender" id="w3lSender" placeholder="Email*" required="">
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <select id="country-code" class="form-control" name="CountryCode">
-                          <option selected>India(+91)</option>
-                          <option >Saudi(+966)</option>
-                          <option >Dubai(+971)</option>
-                        </select>
-                      </div>
-                      <input type="tel" class="form-control" name="Mobile" id="mobile" placeholder="Mobile*" pattern="[5-9]{1}[0-9]{8,9}" required>
+                <form method="POST" class="needs-validation" id="contact-form" novalidate>
+                  <div class="form-row">
+                    <div class="col-sm-6">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name" required>
                       <div class="invalid-feedback">
-                        Enter a valid mobile number!
+                        Enter Name!
                       </div>
                     </div>
+                      <div class="col-sm-6">
+                        <label for="email">Email</label>
+                        <input type="Email" class="form-control" id="email" placeholder="Email" required>
+                        <div class="invalid-feedback">
+                          Enter email!
+                        </div>
+                      </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <select id="country-code" class="form-control" name="CountryCode">
-                          <option selected>India(+91)</option>
-                          <option >Saudi(+966)</option>
-                          <option >Dubai(+971)</option>
-                        </select>
-                      </div>
-                      <input type="tel" class="form-control" name="Landline" id="mobile" placeholder="Landline" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
-                      <div class="invalid-feedback">
-                        Enter a valid landline number!
-                      </div>
+                  <div class="form-row">
+                    <div class="col-sm-6">
+                          <label for="mobile">Mobile</label>
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <select id="country-code" class="form-control">
+                                      <option selected>India(+91)</option>
+                                      <option >Saudi(+966)</option>
+                                      <option >Dubai(+971)</option>
+                                  </select>
+                              </div>
+                              <input type="tel" class="form-control" id="mobile" placeholder="Mobile*" pattern="[5-9]{1}[0-9]{8,9}" required>
+                              <div class="invalid-feedback">
+                                  Enter a valid mobile number!
+                              </div>
+                          </div>
                     </div>
-                  </div>
+                    <div class="col-sm-6">
+                      <label for="mobile">Landline</label>
+                      <div class="input-group">
+                          <div class="input-group-prepend">
+                              <select id="country-code" class="form-control">
+                                  <option selected>India(+91)</option>
+                                  <option >Saudi(+966)</option>
+                                  <option >Dubai(+971)</option>
+                              </select>
+                          </div>
+                          <input type="tel" class="form-control" id="mobile" placeholder="Landline" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
+                          <div class="invalid-feedback">
+                              Enter a valid landline number!
+                          </div>
+                      </div>
                 </div>
-                <input type="text" name="Subject" id="w3lSubject" placeholder="Subject">
-                <textarea type="text" name="Message" id="w3lMessage" placeholder="Message" rows="3" class="form-control md-textarea"></textarea>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-sm-12">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="col-sm-12">
+                      <label for="message">Your Message</label>
+                      <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                      </div>
+                  </div>
                 <input type="hidden" name="_honeypot" value="">
                 <div class="text-center text-md-left">
                   <button type="submit" class="btn btn-primary btn-style mt-3">Send<span class="fa fa-paper-plane ml-3" aria-hidden="true"></span></button>
@@ -355,6 +379,7 @@ Author URL: http://w3layouts.com
 </section>
 <!-- //copyright -->
 <!--//footer-->
+<script src="assets/js/form.js"></script>
 <!-- Template JavaScript -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/theme-change.js"></script>
