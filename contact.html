@@ -160,8 +160,7 @@ Author URL: http://w3layouts.com
                   </div>
                   <div classs="w3ad-infin">
                     <h5 class="mb-2">Our Location</h5>
-                    <p>Car Servicing, 208 Trainer Avenue street, Corner
-                      Market, NY - 62617 </p>
+                    <p>Manjeri, Malapluram, Kerala, India</p>
                   </div>
                 </div>
                 
@@ -193,32 +192,40 @@ Author URL: http://w3layouts.com
                   <input type="text" name="Name" id="w3lName" placeholder="Name*" required="">
                   <input type="email" name="Sender" id="w3lSender" placeholder="Email*" required="">
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <select id="country-code" class="form-control" name="CountryCode">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <select id="country-code" class="form-control" name="CountryCode">
                           <option selected>India(+91)</option>
                           <option >Saudi(+966)</option>
                           <option >Dubai(+971)</option>
-                      </select>
+                        </select>
                       </div>
-                  <input type="tel" class="form-control" name="Mobile" id="mobile" placeholder="Mobile*" pattern="[5-9]{1}[0-9]{8,9}" required>
-                  <div class="invalid-feedback">
-                      Enter a valid mobile number!
-                  </div>
-                  <div class="input-group-prepend">
-                    <select id="country-code" class="form-control" name="CountryCode">
-                      <option selected>India(+91)</option>
-                      <option >Saudi(+966)</option>
-                      <option >Dubai(+971)</option>
-                    </select>
+                      <input type="tel" class="form-control" name="Mobile" id="mobile" placeholder="Mobile*" pattern="[5-9]{1}[0-9]{8,9}" required>
+                      <div class="invalid-feedback">
+                        Enter a valid mobile number!
+                      </div>
                     </div>
-                  <input type="tel" class="form-control" name="Landline" id="mobile" placeholder="Landline" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
-                  <div class="invalid-feedback">
-                    Enter a valid landline number!
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <select id="country-code" class="form-control" name="CountryCode">
+                          <option selected>India(+91)</option>
+                          <option >Saudi(+966)</option>
+                          <option >Dubai(+971)</option>
+                        </select>
+                      </div>
+                      <input type="tel" class="form-control" name="Landline" id="mobile" placeholder="Landline" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
+                      <div class="invalid-feedback">
+                        Enter a valid landline number!
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <input type="text" name="Subject" id="w3lSubject" placeholder="Subject">
-                <textarea name="Message" id="w3lMessage" placeholder="Message"></textarea>
+                <textarea type="text" name="Message" id="w3lMessage" placeholder="Message" rows="3" class="form-control md-textarea"></textarea>
                 <input type="hidden" name="_honeypot" value="">
                 <div class="text-center text-md-left">
                   <button type="submit" class="btn btn-primary btn-style mt-3">Send<span class="fa fa-paper-plane ml-3" aria-hidden="true"></span></button>
