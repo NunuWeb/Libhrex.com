@@ -14519,7 +14519,7 @@ a.navbar-brand {
 }
 
 .navbar .navbar-brand img {
-  max-width: 140px;
+  max-width: 11rem;
   transition: all 0.5s ease;
 }
 
@@ -14529,7 +14529,7 @@ a.navbar-brand {
 }
 
 .navbar .navbar-brand img {
-  max-width: 140px;
+  max-width: 11rem;
   transition: all 0.5s ease;
 }
 
